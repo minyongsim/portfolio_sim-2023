@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+
+
+@media screen and (max-width:1900px) {
+
+    #page-2 .PortfolioBox{
+        padding-top: 35px;
+    }
+    .skillsBox {
+        padding-top: 35px;
+    }
+    .aboutMe{
+        padding-top:35px ;
+    }
+    .page-5 {
+        height:900px;
+    }
+    .contact{
+        height: 600px;
+        padding-top: 35px;
+        position: relative;
+    }
+}
+@media screen and (max-width:1500px) {
+    
+    #header {
+        position: fixed;
+        right:0;
+        top: 40%;
+        transform: translateY(-40%);
+        z-index: 999999;
+        margin: 0 auto;
+        transition: all 0.3s;
+    }
+   
+    .gotop {
+        display: none;
+        padding: 10px 0;
+        border-radius: 10px;
+        position: fixed;
+        right:1%;
+        bottom: 3%;
+        z-index: 99999999;
+        opacity: 0;
+        font-size: 20px;
+        font-weight:900 ;
+        text-align: center;
+    
+    }
+    
+}
