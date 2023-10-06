@@ -51,7 +51,7 @@ $(function ($) {
         });
 
         var header_sct =$(this).scrollTop();
-        var h_winHeight = $(this).height()/2
+        var h_winHeight = $(this).height()/3
 		// if(header_sct >= h_winHeight){
         //     $("#header").css({
         //         // background:'rgba(0,0,0,0.5)',
@@ -320,7 +320,9 @@ $(function ($) {
             'src': src,
             'alt': alt
         }).css({
-            opacity: '0.5'
+            opacity: '0.5',
+            
+            
         }).stop().animate({
             opacity: '1'
         }, 500)
@@ -348,10 +350,12 @@ $(function ($) {
     $('.skillcontainer>.skillTree').hover(function () {
         $(this).css({
             transform: 'scale(1.1)',
-            zIndex:'99999999'
+            zIndex:'99999999',
+            animation: 'fadeInDown 1.5s both 0.5s'
         })
     }, function () {
         $(this).css({
+       
             transform: 'scale(1)'
         })
     }, 500)
