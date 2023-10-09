@@ -1,21 +1,21 @@
 $(function ($) {
 
-    var aniBox = 0
-    var introAni = setInterval(timer, 10)
-    function timer() {
-        aniBox++
-        $('.introAni .introAniInner .aniBox').css({
-            width: aniBox+'%'
-        })
-        // 100%까지 가면 사라지기
-        if (aniBox === 101) {
-            clearInterval(introAni)
-            $('.introAni').fadeOut(100)
-            return false
-        }
-        // 퍼센트 숫자세기
-        $('.introAni .percent').text(aniBox+'%')
-    }
+    // var aniBox = 0
+    // var introAni = setInterval(timer, 10)
+    // function timer() {
+    //     aniBox++
+    //     $('.introAni .introAniInner .aniBox').css({
+    //         width: aniBox+'%'
+    //     })
+    //     // 100%까지 가면 사라지기
+    //     if (aniBox === 101) {
+    //         clearInterval(introAni)
+    //         $('.introAni').fadeOut(100)
+    //         return false
+    //     }
+    //     // 퍼센트 숫자세기
+    //     $('.introAni .percent').text(aniBox+'%')
+    // }
 
     // 새로 고침하면 스크롤 탑
     window.onload = function() {
