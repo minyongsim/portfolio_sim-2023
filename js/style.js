@@ -104,6 +104,7 @@ $(function ($) {
         var winHeight = sct - $(this).height() / 2
         skils(80, '.photoshop');
         skils(70, '.illustrator');
+        skils(70, '.figma');
         skils(75, '.html');
         skils(75, '.css');
         skils(40, '.js');
@@ -366,22 +367,22 @@ $(function ($) {
         }
         changeList(lieq)
     })
-    $('.skillcontainer>.skillTree').css({
-        transition: 'transform 0.2s'
-    })
+    // $('.skillcontainer>.skillTree').css({
+    //     transition: 'transform 0.2s'
+    // })
 
-    $('.skillcontainer>.skillTree').hover(function () {
-        $(this).css({
-            transform: 'scale(1.1)',
-            zIndex: '99999999',
-            animation: 'fadeInDown 1.5s both 0.5s'
-        })
-    }, function () {
-        $(this).css({
+    // $('.skillcontainer>.skillTree').hover(function () {
+    //     $(this).css({
+    //         transform: 'scale(1.1)',
+    //         zIndex: '99999999',
+    //         animation: 'fadeInDown 1.5s both 0.5s'
+    //     })
+    // }, function () {
+    //     $(this).css({
 
-            transform: 'scale(1)'
-        })
-    }, 500)
+    //         transform: 'scale(1)'
+    //     })
+    // }, 500)
 
 
 
