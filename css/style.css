@@ -460,16 +460,14 @@ body {
 
 .scrollDown h2 {
   font-family: 'Oswald', sans-serif; 
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     color: #373736;
     margin-bottom: 10px;
 }
 
 
-.scrollDown ul li img {
-    width: 50px;
-}
+
 .scrollDown ul li:nth-of-type(1){
     animation:scrollDown01 1.9s infinite  ;
 }
@@ -479,6 +477,16 @@ body {
 .scrollDown ul li:nth-of-type(3){
     animation:scrollDown01 1.9s infinite 0.4s ;
 }
+.scrollDown ul li>img:nth-of-type(1){
+   width: 50px;
+}
+.scrollDown ul li>img:nth-of-type(2){
+    width: 70px;
+ }
+ .scrollDown ul li>img:nth-of-type(3){
+    width: 90px;
+ }
+
 
  @keyframes scrollDown01 {
     0% {
