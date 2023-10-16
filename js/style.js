@@ -26,6 +26,7 @@ $(function ($) {
 
     // 메뉴 스크롤 이벤트
     var $menu = $('#header .headerBox .menuBox li '),
+        $hgmu = $ ('.hg_header>.hg_headerBox li')
         $pages = $('.pages > .page');
 
 
@@ -41,7 +42,7 @@ $(function ($) {
 
     // 스크롤 이벤트
 
-    var scollSize = $(document).height() - $('#header').height() - $(window).height();
+    var scollSize = $(document).height() - $('#header,.hg_header>.hg_headerBox').height() - $(window).height();
     $(window).scroll(function () {
         // 스크롤 시 메뉴에 active
         $pages.each(function () {
@@ -51,6 +52,15 @@ $(function ($) {
                 $menu.eq(idx).addClass('active')
             }
         });
+        $pages.each(function () {
+            if ($(this).offset().top <= $(window).scrollTop()) {
+                var idx = $(this).index();
+                $hgmu.removeClass('act')
+                $hgmu.eq(idx).addClass('act')
+            }
+        });
+
+
 
 
 
@@ -312,7 +322,7 @@ $(function ($) {
     })
 
     var href, src, alt, lieq;
-    $('.listBox > li > a').on('click', function (e) {
+    $('.listBox>li>a').on('click', function(e) {
         e.preventDefault(); //기본 이벤틀 막아줌
         lieq = $(this).parent().index()
         $('.gellaryPopup').addClass('on')
@@ -355,14 +365,14 @@ $(function ($) {
     $('.popuplist .prev').on('click', function () {
         --lieq;
         if (lieq < 0) {
-            lieq = 13;
+            lieq = 20;
         }
         changeList(lieq)
     })
 
     $('.popuplist .next').on('click', function () {
         ++lieq;
-        if (lieq > 13) {
+        if (lieq > 20) {
             lieq = 0;
         }
         changeList(lieq)

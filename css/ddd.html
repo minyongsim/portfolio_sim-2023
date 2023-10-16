@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Gallery</title>
+</head>
+<body>
+    <ul id="gallery">
+        <li><img src="images/1.jpg" alt="Image 1"></li>
+        <li><img src="images/2.jpg" alt="Image 2"></li>
+        <li><img src="images/3.jpg" alt="Image 3"></li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // 이미지를 선택합니다.
+            var images = $("#gallery li img");
+
+            // 슬라이드 쇼 기능을 추가합니다.
+            images.on("click", function() {
+                // 현재 이미지를 가려줍니다.
+                $(this).hide();
+
+                // 팝업을 생성합니다.
+                var popup = $("<div class='popup'><img src='" + $(this).attr("src") + "' alt='Image'></div>");
+
+                // 팝업을 화면에 표시합니다.
+                popup.appendTo("body").show();
+
+                // 슬라이드쇼를 시작합니다.
+                slideShow(popup);
+            });
+
+            // 슬라이드 쇼 함수
+            function slideShow(popup) {
+                // 다음 이미지를 가져옵니다.
+                var next = popup.find("img").next();
+                if (next.length === 0) {
+                    next = popup.find("img").first();
+                }
+
+                // 다음 이미지를 팝업에 표시합니다.
+                popup.find("img").hide();
+                next.show();
+
+                // 슬라이드쇼를 다음 이미지로 이동합니다.
+                setTimeout(function() {
+                    slideShow(popup);
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>
