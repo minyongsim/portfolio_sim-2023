@@ -312,7 +312,7 @@ $(function ($) {
     })
 
     var href, src, alt, lieq;
-    $('.listBox > li > a').on('click', function (e) {
+    $('.listBox>li>a').on('click', function(e) {
         e.preventDefault(); //기본 이벤틀 막아줌
         lieq = $(this).parent().index()
         $('.gellaryPopup').addClass('on')
