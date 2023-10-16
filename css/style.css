@@ -4,9 +4,8 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     color: #1a1a1a;
     overflow-x: hidden;
-    /* font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Oswald', sans-serif; */
-    
+    /* font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif; */
 }
 
 
@@ -88,7 +87,7 @@ body {
     width: 150px;
     font-weight: 900;
     font-size: 18px;
-  font-family: 'Oswald', sans-serif; 
+  font-family: 'Allerta Stencil', sans-serif;
     color: #373736;
     margin-bottom: 25px;
     position: relative;
@@ -182,7 +181,7 @@ body {
     align-items: center;
     justify-content: space-between;
     color: #373736;
-  font-family: 'Oswald', sans-serif; 
+  font-family: 'Allerta Stencil', sans-serif;
     letter-spacing: 3px;
 }
 
@@ -370,7 +369,7 @@ body {
     animation: fadeInDown 1.5s both 0.5s;
 }
 .hg03{
-  font-family: 'Oswald', sans-serif; 
+  font-family: 'Allerta Stencil', sans-serif;
     text-align: center;
     font-size: 40px;
     letter-spacing: 5px;
@@ -459,7 +458,7 @@ body {
 }
 
 .scrollDown h2 {
-  font-family: 'Oswald', sans-serif; 
+  font-family: 'Allerta Stencil', sans-serif;
     font-size: 20px;
     font-weight: 900;
     color: #373736;
@@ -533,7 +532,7 @@ body {
     font-size: 40px;
     color: #F7F2F0;
     letter-spacing: 3px;
-  font-family: 'Oswald', sans-serif; 
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 #page-2 .PortfolioBox .keyword {
@@ -823,7 +822,7 @@ body {
     font-size: 40px;
     color: #F7F2F0;
     background: #373736;
-  font-family: 'Oswald', sans-serif; 
+  font-family: 'Allerta Stencil', sans-serif;
     letter-spacing: 3px;
     border: 1px solid #373736;
     border-bottom:none;
