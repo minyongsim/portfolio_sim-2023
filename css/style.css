@@ -41,7 +41,7 @@ body {
 }
 
 .page-2 {
-    height: 900px;
+    height: 1500px;
     background: #F7F2F0;
 
 }
@@ -513,7 +513,7 @@ body {
 
 /* #page-2 .Portfolio */
 #page-2 .PortfolioBox {
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 #page-2 .PortfolioBox .keywordBox {
@@ -619,7 +619,7 @@ body {
 
 
 #page-2 .PortfolioBox .listBox {
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
@@ -627,11 +627,11 @@ body {
 }
 
 #page-2 .PortfolioBox .listBox li {
-    width: 225px;;
+    width: 225px;
+    height:220px;
     border: 3px solid #373736;
     margin-right: 10px;
     margin-bottom: 10px;
-    height: 210px;
     border-radius: 3px;
     text-align: center;
     background: #F7F2F0;
@@ -657,26 +657,33 @@ body {
     width: 180px;
 }
 
-#page-2 .PortfolioBox .listBox li:nth-child(1),
-#page-2 .PortfolioBox .listBox li:nth-child(2),
-#page-2 .PortfolioBox .listBox li:nth-child(3),
-#page-2 .PortfolioBox .listBox li:nth-child(4),
-#page-2 .PortfolioBox .listBox li:nth-child(5),
-#page-2 .PortfolioBox .listBox li:nth-child(6),
-#page-2 .PortfolioBox .listBox li:nth-child(7) {
+#page-2 .PortfolioBox .listBox li:nth-of-type(1),
+#page-2 .PortfolioBox .listBox li:nth-of-type(2),
+#page-2 .PortfolioBox .listBox li:nth-of-type(3),
+#page-2 .PortfolioBox .listBox li:nth-of-type(4),
+#page-2 .PortfolioBox .listBox li:nth-of-type(5),
+#page-2 .PortfolioBox .listBox li:nth-of-type(6),
+#page-2 .PortfolioBox .listBox li:nth-of-type(7) {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
 }
 
-#page-2 .PortfolioBox .listBox li:nth-child(8),
-#page-2 .PortfolioBox .listBox li:nth-child(9),
-#page-2 .PortfolioBox .listBox li:nth-child(10),
-#page-2 .PortfolioBox .listBox li:nth-child(11),
-#page-2 .PortfolioBox .listBox li:nth-child(12),
-#page-2 .PortfolioBox .listBox li:nth-child(13),
-#page-2 .PortfolioBox .listBox li:nth-child(14),
-#page-2 .PortfolioBox .listBox li:nth-child(15) {
+#page-2 .PortfolioBox .listBox li:nth-of-type(8),
+#page-2 .PortfolioBox .listBox li:nth-of-type(9),
+#page-2 .PortfolioBox .listBox li:nth-of-type(10),
+#page-2 .PortfolioBox .listBox li:nth-of-type(11),
+#page-2 .PortfolioBox .listBox li:nth-of-type(12),
+#page-2 .PortfolioBox .listBox li:nth-of-type(13),
+#page-2 .PortfolioBox .listBox li:nth-of-type(14),
+#page-2 .PortfolioBox .listBox li:nth-of-type(15),
+#page-2 .PortfolioBox .listBox li:nth-of-type(16),
+#page-2 .PortfolioBox .listBox li:nth-of-type(17),
+#page-2 .PortfolioBox .listBox li:nth-of-type(18),
+#page-2 .PortfolioBox .listBox li:nth-of-type(19),
+#page-2 .PortfolioBox .listBox li:nth-of-type(20),
+#page-2 .PortfolioBox .listBox li:nth-of-type(21)
+{
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
@@ -684,65 +691,75 @@ body {
 
 
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(1) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(1) {
     animation: fadeInDown 2s both;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(2) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(2) {
     animation: fadeInDown 2s both 0.1s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(3) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(3) {
     animation: fadeInDown 2s both 0.2s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(4) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(4) {
     animation: fadeInDown 2s both 0.3s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(5) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(5) {
     animation: fadeInDown 2s both;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(6) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(6) {
     animation: fadeInDown 2s both 0.1s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(7) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(7) {
     animation: fadeInDown 2s both 0.2s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(8) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(8) {
     animation: fadeInRight 2s both 0.3s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(9) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(9) {
     animation: fadeInRight 2s both 0.4s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(10) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(10) {
     animation: fadeInRight 2s both;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(11) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(11) {
     animation: fadeInRight 2s both 0.1s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(12) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(12) {
     animation: fadeInRight 2s both 0.2s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(13) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(13) {
     animation: fadeInRight 2s both 0.3s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(14) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(14) {
     animation: fadeInRight 2s both 0.4s;
 }
 
-#page-2 .PortfolioBox.on .listBox li:nth-child(15) {
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(15) {
     animation: fadeInRight 2s both;
 }
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(16),
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(17),
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(18),
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(19),
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(20),
+#page-2 .PortfolioBox.on .listBox li:nth-of-type(21)
+ {
+    animation: fadeInRight 2s both;
+}
+
 
 /* 갤러리 팝업 */
 .PortfolioBox .gellaryPopup {
@@ -752,7 +769,7 @@ body {
     bottom: 50%;
     left: 50%;
     right: 50%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(247,242,240, 0.5);
     z-index: 99999999999;
     transition: all 0.5s;
     overflow: hidden;
@@ -778,8 +795,8 @@ body {
 
 .PortfolioBox .gellaryPopup .popuplist .close {
     position: absolute;
-    top: -100px;
-    right: 50px;
+    top: -90px;
+    right: 0px;
     font-size: 80px;
     color: rgba(251, 68, 63, 0.8);
     background: none;

@@ -304,7 +304,7 @@ $(function ($) {
 
     })
 
-    $('.gellaryPopup .close, .gellaryPopup').on('click', function () {
+    $('.gellaryPopup .close').on('click', function () {
         $('.gellaryPopup').removeClass('on')
     })
     $('.popuplist').on('click', function (e) {
@@ -328,33 +328,34 @@ $(function ($) {
 
     $('.popuplist .prev').on('click', function () {
         --lieq;
-        if (lieq < 0) {
-            lieq = 13;
+        if (lieq<0) {
+            lieq=21;
         }
         changeList(lieq)
     })
 
     $('.popuplist .next').on('click', function () {
         ++lieq;
-        if (lieq > 13) {
-            lieq = 0;
+        if (lieq>21) {
+            lieq=0;
         }
         changeList(lieq)
     })
-    $('.skillcontainer>.skillTree').css({
-        transition: 'transform 0.2s'
-    })
 
-    $('.skillcontainer>.skillTree').hover(function () {
-        $(this).css({
-            transform: 'scale(1.1)',
-            zIndex:'99999999'
-        })
-    }, function () {
-        $(this).css({
-            transform: 'scale(1)'
-        })
-    }, 500)
+    // $('.skillcontainer>.skillTree').css({
+    //     transition: 'transform 0.2s'
+    // })
+
+    // $('.skillcontainer>.skillTree').hover(function () {
+    //     $(this).css({
+    //         transform: 'scale(1.1)',
+    //         zIndex:'99999999'
+    //     })
+    // }, function () {
+    //     $(this).css({
+    //         transform: 'scale(1)'
+    //     })
+    // }, 500)
 
 
   
