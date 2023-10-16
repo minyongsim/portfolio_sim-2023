@@ -329,14 +329,14 @@ $(function ($) {
     $('.popuplist .prev').on('click', function () {
         --lieq;
         if (lieq<0) {
-            lieq=19;
+            lieq=21;
         }
         changeList(lieq)
     })
 
     $('.popuplist .next').on('click', function () {
         ++lieq;
-        if (lieq>19) {
+        if (lieq>21) {
             lieq=0;
         }
         changeList(lieq)

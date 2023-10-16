@@ -26,7 +26,6 @@ $(function ($) {
 
     // 메뉴 스크롤 이벤트
     var $menu = $('#header .headerBox .menuBox li '),
-        $hgmu = $ ('.hg_header>.hg_headerBox li')
         $pages = $('.pages > .page');
 
 
@@ -42,7 +41,7 @@ $(function ($) {
 
     // 스크롤 이벤트
 
-    var scollSize = $(document).height() - $('#header,.hg_header>.hg_headerBox').height() - $(window).height();
+    var scollSize = $(document).height() - $('#header').height() - $(window).height();
     $(window).scroll(function () {
         // 스크롤 시 메뉴에 active
         $pages.each(function () {
@@ -52,15 +51,6 @@ $(function ($) {
                 $menu.eq(idx).addClass('active')
             }
         });
-        $pages.each(function () {
-            if ($(this).offset().top <= $(window).scrollTop()) {
-                var idx = $(this).index();
-                $hgmu.removeClass('act')
-                $hgmu.eq(idx).addClass('act')
-            }
-        });
-
-
 
 
 
