@@ -355,14 +355,14 @@ $(function ($) {
     $('.popuplist .prev').on('click', function () {
         --lieq;
         if (lieq < 0) {
-            lieq = 21;
+            lieq = 20;
         }
         changeList(lieq)
     })
 
     $('.popuplist .next').on('click', function () {
         ++lieq;
-        if (lieq > 21) {
+        if (lieq > 20) {
             lieq = 0;
         }
         changeList(lieq)
