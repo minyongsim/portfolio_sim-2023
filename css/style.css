@@ -84,34 +84,12 @@ body {
 
 .menuBox>li {
     text-align: center;
-    width: 150px;
-    font-weight: 900;
-    font-size: 18px;
-  font-family: 'Allerta Stencil', sans-serif;
+    width: 100px;
+    font-family: 'Allerta Stencil', sans-serif;
     color: #373736;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     position: relative;
 
-}
-
-/* .menuBox>li::after{
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -40px;
-    transform: translateX(-50%);
-    width: 5px;
-    height: 40px;
-    border-radius: 50px;
-    background: #373736;
-  
-} */
-.menuBox>li:nth-of-type(5) {
-    margin-bottom: 0px;
-}
-
-.menuBox>li:nth-of-type(5)::after {
-    display: none;
 }
 
 .menuBox>li a span:nth-of-type(1) {
@@ -123,18 +101,18 @@ body {
 
 .menuBox>li.active a span:nth-of-type(1) {
     display: block;
-    padding: 10px;
-    font-size: 18px;
+    padding: 5px 10px;
+    font-size: 15px;
 }
 
 .menuBox>li a span:nth-of-type(2) {
     text-align: center;
     display: block;
     color: #F7F2F0;
-    width: 30px;
-    height: 30px;
+    width: 5px;
+    height: 45px;
     padding: 2px;
-    border-radius: 50%;
+    border-radius: 50px;
     background: #373736;
 }
 
@@ -142,6 +120,8 @@ body {
     text-align: center;
     display: none;
 }
+
+
 
 .slideBar {
     position: fixed;
