@@ -133,10 +133,10 @@ $(function ($) {
         var scrollEvent = $(this).scrollTop()
         var page1Event = $('.page-1').offset().top - $(this).height() / 2
         if (scrollEvent >= page1Event && scrollEvent <= $('.page-1').offset().top) {
-            $('.hg01,.hg02,.hg03,.hg41,.hg42,.hg43,.hg51,.hg52,.hg53,.rotate,.rotate01,.scrollDown').show()
+            $('.home_main ,.home_a,.home_icon ,.scrollDown').show()
 
         } else {
-            $('.hg01,.hg02,.hg03,.hg41,.hg42,.hg43,.hg51,.hg52,.hg53,.rotate,.rotate01,.scrollDown').hide()
+            $('.home_main,.home_a,.home_icon,.scrollDown').hide()
 
         };
         var page2Event = $('.page-2').offset().top - $(this).height() / 2
