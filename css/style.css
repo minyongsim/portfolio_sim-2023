@@ -778,17 +778,30 @@ right: 5%;
     /* left: 50%; width: 30%; transform: translate(-50%, -50%); */
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: right;
+}
+.PortfolioBox .gellaryPopup .popuplist .close_box {
+    position: absolute;
+    width: 842px;
+    height: 90px;
+    top: -100px;
+    right: 0px;
+    background: #373736;
+    border: 1px solid #373736;
+    padding: 20px;
+}
+.PortfolioBox .gellaryPopup .popuplist .close_box h2 {
+    position: absolute;
+    left: 5%;
+    color: #F7F2F0;
+    font-size: 30px;
 }
 
 .PortfolioBox .gellaryPopup .popuplist .close {
-    position: absolute;
-    top: -90px;
-    right: 0px;
-    font-size: 80px;
-    color: rgba(251, 68, 63, 0.8);
-    background: none;
     cursor: pointer;
+    background: none;
+    font-size: 50px;
+    color: rgba(251, 68, 63, 0.8);
 }
 
 .PortfolioBox .gellaryPopup .popuplist .close:hover {
@@ -800,7 +813,7 @@ right: 5%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 100px;
-    color: #fff;
+    color: #373736;
     background: none;
     cursor: pointer;
 }
