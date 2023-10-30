@@ -2,51 +2,664 @@
 
 
 
-@media screen and (max-width:1900px) {
+@media screen and (max-width:1980px) {
 
-    #page-2 .PortfolioBox{
+    /* 사이드 메뉴 홀성솨 */
+    #header {
+        position: fixed;
+        right: 0.5%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999999;
+        margin: 0 auto;
+        transition: all 0.3s;
+    }
+
+    .headerBox {
+        padding: 10px;
+    }
+
+    .menuBox {
+        width: 70%;
+        /* border: 1px solid #fff; */
+    }
+
+    .menuBox>li {
+        text-align: center;
+        font-family: 'Allerta Stencil', sans-serif;
+        color: #373736;
+        margin-bottom: 25px;
+        position: relative;
+
+    }
+
+    .menuBox>li a span:nth-of-type(1) {
+        width: 130px;
+        display: none;
+        background: #373736;
+        color: #F7F2F0;
+        padding: 2px;
+        border-radius: 50px;
+    }
+
+    .menuBox>li.active a>span:nth-of-type(1) {
+        display: block;
+        font-size: 15px;
+    }
+
+    .menuBox>li a>span:nth-of-type(2) {
+        text-align: center;
+        display: block;
+        color: #F7F2F0;
+        font-weight: normal;
+        width: 50px;
+        font-size: 15px;
+        border-radius: 50px;
+        background: #373736;
+    }
+
+    .menuBox>li.active a span:nth-of-type(2) {
+        text-align: center;
+        display: none;
+    }
+
+    /* #page-2 .Portfolio */
+    #page-2 .PortfolioBox {
+        padding-top: 30px;
+    }
+
+    #page-2 .PortfolioBox .keywordBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #373736;
+    }
+
+    #page-2 .PortfolioBox .key_text {
+        padding-left: 50px;
+    }
+
+    #page-2 .PortfolioBox .key_text>h2 {
+        text-align: center;
+        font-size: 20px;
+        color: #F7F2F0;
+        letter-spacing: 3px;
+        font-family: 'Allerta Stencil', sans-serif;
+    }
+
+    #page-2 .PortfolioBox .keyword {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #page-2 .PortfolioBox .keyword li {
+        padding: 10px;
+    }
+
+    #page-2 .PortfolioBox .keyword li button {
+        width: 120px;
+        text-align: center;
+        color: #F7F2F0;
+        margin: 5px 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 5px 7px;
+        background: none;
+        transition: all 0.3s;
+    }
+
+    #page-2 .PortfolioBox .keyword li:nth-child(1) {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    #page-2 .PortfolioBox .keyword li:nth-child(2) {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    #page-2 .PortfolioBox .keyword li:nth-child(3) {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    #page-2 .PortfolioBox .keyword li:nth-child(4) {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    #page-2 .PortfolioBox .keyword li:nth-child(5) {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+
+    #page-2 .PortfolioBox.on .keyword li:nth-child(1) {
+        animation: fadeInDown 1s both;
+    }
+
+    #page-2 .PortfolioBox.on .keyword li:nth-child(2) {
+        animation: fadeInDown 1s both 0.3s;
+    }
+
+    #page-2 .PortfolioBox.on .keyword li:nth-child(3) {
+        animation: fadeInDown 1s both 0.6s;
+    }
+
+    #page-2 .PortfolioBox.on .keyword li:nth-child(4) {
+        animation: fadeInDown 1s both 0.9s;
+    }
+
+    #page-2 .PortfolioBox.on .keyword li:nth-child(5) {
+        animation: fadeInDown 1s both 1.3s;
+    }
+
+    #page-2 .PortfolioBox .keyword li button:hover {
+        border-bottom: 3px solid #F7F2F0;
+    }
+
+    #page-2 .PortfolioBox .keyword li button.act {
+        border-bottom: 3px solid #F7F2F0;
+    }
+
+
+    #page-2 .PortfolioBox .listBox {
+        height: 700px;
+        /* border: 3PX solid #373736; */
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        padding: 5px 10px;
+    }
+
+    #page-2 .PortfolioBox .listBox li {
+        width: 180px;
+        height: 150px;
+        margin: 3PX;
+        border: 3px solid #373736;
+        border-radius: 3px;
+        text-align: center;
+        background: #F7F2F0;
+    }
+
+    #page-2 .PortfolioBox .listBox li p {
+        font-size: 15px;
+        padding: 4px;
+        color: #F7F2F0;
+        font-weight: bold;
+        background: #373736;
+    }
+
+    #page-2 .PortfolioBox .listBox li p:nth-of-type(2) {
+        display: none;
+        font-size: 10px;
+        color: #0D0D0D;
+        margin-top: 3px;
+        background: none;
+    }
+
+    #page-2 .PortfolioBox .listBox li img {
+        width:80%;
+    }
+
+    #page-2 .PortfolioBox .listBox li:nth-of-type(1),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(2),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(3),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(4),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(5),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(6),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(7) {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    #page-2 .PortfolioBox .listBox li:nth-of-type(8),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(9),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(10),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(11),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(12),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(13),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(14),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(15),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(16),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(17),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(18),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(19),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(20),
+    #page-2 .PortfolioBox .listBox li:nth-of-type(21) {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(1) {
+        animation: fadeInDown 2s both;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(2) {
+        animation: fadeInDown 2s both 0.1s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(3) {
+        animation: fadeInDown 2s both 0.2s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(4) {
+        animation: fadeInDown 2s both 0.3s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(5) {
+        animation: fadeInDown 2s both;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(6) {
+        animation: fadeInDown 2s both 0.1s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(7) {
+        animation: fadeInDown 2s both 0.2s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(8) {
+        animation: fadeInRight 2s both 0.3s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(9) {
+        animation: fadeInRight 2s both 0.4s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(10) {
+        animation: fadeInRight 2s both;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(11) {
+        animation: fadeInRight 2s both 0.1s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(12) {
+        animation: fadeInRight 2s both 0.2s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(13) {
+        animation: fadeInRight 2s both 0.3s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(14) {
+        animation: fadeInRight 2s both 0.4s;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(15) {
+        animation: fadeInRight 2s both;
+    }
+
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(16),
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(17),
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(18),
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(19),
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(20),
+    #page-2 .PortfolioBox.on .listBox li:nth-of-type(21) {
+        animation: fadeInRight 2s both;
+    }
+
+
+    /* 갤러리 팝업 */
+    .PortfolioBox .gellaryPopup {
+        opacity: 0;
+        position: fixed;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        background: rgba(247, 242, 240, 0.5);
+        z-index: 99999999999;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+
+    .PortfolioBox .gellaryPopup.on {
+        opacity: 1;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        overflow: visible;
+    }
+
+    .PortfolioBox .gellaryPopup .popuplist {
+        position: absolute;
+        top: 50%;
+        /* left: 50%; width: 30%; transform: translate(-50%, -50%); */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: right;
+    }
+    .PortfolioBox .gellaryPopup .popuplist > div img {
+        width:700px;
+    }
+
+    .PortfolioBox .gellaryPopup .popuplist .close_box {
+        position: absolute;
+        width: 700px;
+        height: 90px;
+        top: -100px;
+        right: 0px;
+        background: #373736;
+        border: 1px solid #373736;
+        padding: 20px;
+    }
+
+    .PortfolioBox .gellaryPopup .popuplist .close_box h2 {
+        position: absolute;
+        left: 5%;
+        color: #F7F2F0;
+        font-size: 30px;
+    }
+
+    .PortfolioBox .gellaryPopup .popuplist .close {
+        cursor: pointer;
+        background: none;
+        font-size: 50px;
+        color: rgba(251, 68, 63, 0.8);
+    }
+
+    .PortfolioBox .gellaryPopup .popuplist .close:hover {
+        color: rgba(251, 68, 63, 1);
+    }
+
+    .PortfolioBox .gellaryPopup .popuplist .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 100px;
+        color: #373736;
+        background: none;
+        cursor: pointer;
+    }
+
+    .PortfolioBox .gellaryPopup .popuplist .arrow:hover {
+        color: rgba(251, 68, 63, 1);
+    }
+
+    .PortfolioBox .gellaryPopup .popuplist .prev {
+        left: -150px;
+    }
+
+    .PortfolioBox .gellaryPopup .popuplist .next {
+        right: -150px;
+    }
+
+    /*#page-3 Skills*/
+.skillsBox {
+    padding-top: 30px;
+}
+
+.skillsBox>.skillText {
+    padding: 10px 0px 10px 50px;
+    font-size: 30px;
+    color: #F7F2F0;
+    background: #373736;
+  font-family: 'Allerta Stencil', sans-serif;
+    letter-spacing: 3px;
+    border: 1px solid #373736;
+    border-bottom:none;
+}
+
+.skills {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #373736;
+
+}
+
+.skillcontainer {
+    width: 40%;
+    border-right: 1px dashed #373736;
+    padding: 20px;
+    text-align: center;
+}
+
+.skillcontainer>.skillTree {
+    padding: 10px;
+    width: 120px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    /* -webkit-transition:all 0.2s;
+    transition:all 0.2s; */
+}
+
+.skillcontainer .skillTree>p {
+    text-align: center;
+    color: #373736;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.skillcontainer .score {
+    width: 50px;
+    height: 180px;
+    margin: 10px auto;
+    border: 1px solid #0D0D0D;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+   transition: all 0.3s;
+}
+.skillcontainer .score:hover{
+    transform: scale(1.2);
+}
+
+.skillcontainer .myscore {
+    height: 0px;
+    width: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    opacity: 0;
+    color: #F7F2F0;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+}
+
+
+.skillcontainer .photoshop .myscore.on {
+    background: #373736;
+    animation: photoshopscore 2s both;
+}
+
+.skillcontainer .illustrator .myscore.on {
+    background: #373736;
+    animation: illustratorscore 2s both 0.3s;
+}
+
+.skillcontainer .figma .myscore.on {
+    background: #373736;
+    animation: figmascore 2s both 0.2s;
+}
+
+.skillcontainer .html .myscore.on {
+    background: #373736;
+    animation: htmlscore 2s both 0.5s;
+}
+
+.skillcontainer .css .myscore.on {
+    background: #373736;
+    animation: cssscore 2s both 0.8s;
+}
+
+.skillcontainer .js .myscore.on {
+    background: #373736;
+    animation: jsscore 2s both 1.2s;
+}
+
+/* .skillcontainer .react .myscore.on {
+    background: #373736;
+    animation: reactscore 2s both 1.5s;
+} */
+
+@keyframes photoshopscore {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 80%;
+        opacity: 1;
+    }
+}
+
+@keyframes illustratorscore {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 70%;
+        opacity: 1;
+    }
+}
+
+@keyframes figmascore {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 70%;
+        opacity: 1;
+    }
+}
+
+@keyframes htmlscore {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 75%;
+        opacity: 1;
+    }
+}
+
+@keyframes cssscore {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 75%;
+        opacity: 1;
+    }
+}
+
+@keyframes jsscore {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 60%;
+        opacity: 1;
+    }
+}
+
+@keyframes reactscore {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 50%;
+        opacity: 1;
+    }
+}
+
+.skillcontainer02 {
+    width: 60%;
+}
+
+.skillcontainer02>.skillTree02 {
+    margin-bottom: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+.skillcontainer02>.skillTree02>p {
+    padding: 5px 15px;
+    color: #373736;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s
+}
+
+.skillcontainer02>.skillTree02 p:nth-of-type(1) {
+    color: #F7F2F0;
+    font-size: 18px;
+    background: #373736;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.skillcontainer02>.skillTree02>p:hover {
+    background: #373736;
+    color: #F7F2F0;
+}
+
+.skillcontainer02 .skillTree02:nth-child(1),
+.skillcontainer02 .skillTree02:nth-child(2),
+.skillcontainer02 .skillTree02:nth-child(3) {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.skillcontainer02.on .skillTree02:nth-child(1) {
+    animation: fadeInUp 1.5s both;
+}
+
+.skillcontainer02.on .skillTree02:nth-child(2) {
+    animation: fadeInUp 1.5s both 0.3s;
+}
+
+.skillcontainer02.on .skillTree02:nth-child(3) {
+    animation: fadeInUp 1.5s both 0.6s;
+}
+
+
+
+
+
+
+
+
+  
+    .aboutMe {
         padding-top: 35px;
     }
-    .skillsBox {
-        padding-top: 35px;
-    }
-    .aboutMe{
-        padding-top:35px ;
-    }
+
     .page-5 {
-        height:900px;
+        height: 900px;
     }
-    .contact{
+
+    .contact {
         height: 600px;
         padding-top: 35px;
         position: relative;
     }
 }
-@media screen and (max-width:1500px) {
-    
-    #header {
-        position: fixed;
-        right:0;
-        top: 40%;
-        transform: translateY(-40%);
-        z-index: 999999;
-        margin: 0 auto;
-        transition: all 0.3s;
-    }
-   
-    .gotop {
-        display: none;
-        padding: 10px 0;
-        border-radius: 10px;
-        position: fixed;
-        right:1%;
-        bottom: 3%;
-        z-index: 99999999;
-        opacity: 0;
-        font-size: 20px;
-        font-weight:900 ;
-        text-align: center;
-    
-    }
-    
-}
+
+@media screen and (max-width:1500px) {}
