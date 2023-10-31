@@ -63,6 +63,70 @@
         display: none;
     }
 
+    /* scrollDown */
+.scrollDown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    text-align: center;
+    animation:scrollDown 1.8s infinite ;
+}
+
+.scrollDown h2 {
+  font-family: 'Allerta Stencil', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: #373736;
+    margin-bottom: 10px;
+}
+
+
+.scrollDown ul li:nth-of-type(1){
+    animation:scrollDown01 1.9s infinite  ;
+}
+.scrollDown ul li:nth-of-type(2){
+    animation:scrollDown01 1.9s infinite 0.2s ;
+}
+.scrollDown ul li:nth-of-type(3){
+    animation:scrollDown01 1.9s infinite 0.4s ;
+}
+.scrollDown ul li>img:nth-of-type(1){
+   width: 30px;
+}
+.scrollDown ul li>img:nth-of-type(2){
+    width: 30px;
+ }
+ .scrollDown ul li>img:nth-of-type(3){
+    width: 30px;
+ }
+
+
+ @keyframes scrollDown01 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+     
+    }
+} 
+@keyframes scrollDown {
+    0% {
+        opacity: 1;
+        bottom: 6%;
+     
+    }
+    100% {
+        opacity: 1;
+        bottom:5%;
+      
+    }
+
+} 
+
+
     /* #page-2 .Portfolio */
     #page-2 .PortfolioBox {
         padding-top: 30px;
@@ -640,6 +704,199 @@
 }
 
 
+/* page-4 About Me*/
+.aboutMe {
+    padding-top: 30px;
+}
+
+/* .aboutMe>h2 {
+   
+    text-align: center;
+    padding: 5px;
+    background: #fff;
+    font-size: 30px;
+    color: #0D0D0D;
+   
+} */
+
+.aboutBox {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutBox .information {
+    width: 37%;
+}
+
+.aboutBox .information h2 {
+    text-align: center;
+    color: #373736;
+    padding: 15px 0px;
+    border-bottom: 1px dashed #373736;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.aboutBox .information h2::after {
+    content: 'NO.15031995';
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    bottom: -28px;
+    right: 5px;
+
+}
+
+.aboutBox .information .infoBox {
+    margin-top: 15px;
+    color: #373736;
+    font-weight: bold;
+
+}
+
+.aboutBox .information .infoBox li {
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.aboutBox .information .infoBox li p {
+    margin-bottom: 7px;
+}
+
+.aboutBox .information .infoBox li p:nth-of-type(1) {
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background: #373736;
+    color: #F7F2F0;
+}
+
+.aboutBox .information .infoBox li:nth-of-type(1),
+.aboutBox .information .infoBox li:nth-of-type(2),
+.aboutBox .information .infoBox li:nth-of-type(3),
+.aboutBox .information .infoBox li:nth-of-type(4),
+.aboutBox .information .infoBox li:nth-of-type(5) {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.aboutBox .information.on .infoBox li:nth-of-type(1) {
+    animation: fadeInDown 1.5s both 0.8s;
+}
+
+.aboutBox .information.on .infoBox li:nth-of-type(2) {
+    animation: fadeInDown 1.5s both 0.6s;
+}
+
+.aboutBox .information.on .infoBox li:nth-of-type(3) {
+    animation: fadeInDown 1.5s both 0.4s;
+}
+
+.aboutBox .information.on .infoBox li:nth-of-type(4) {
+    animation: fadeInDown 1.5s both 0.2s;
+}
+
+.aboutBox .information.on .infoBox li:nth-of-type(5) {
+    animation: fadeInDown 1.5s both;
+}
+
+
+.aboutBox .information02 {
+    width: 57%;
+    height: 600px;
+    padding: 10px;
+    border: 1px solid #373736;
+    display: none;
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.aboutBox .information02.on {
+    display: block;
+    animation: fadeInRight 1.5s both;
+}
+
+
+.aboutBox .information02>h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #F7F2F0;
+    padding: 5px 30px;
+    background: #373736;
+    margin: 15px;
+}
+
+.aboutBox .information02Inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutBox .information02Inner div>h2 {
+    text-align: center;
+    font-size: 23px;
+    background: #373736;
+    color: #F7F2F0;
+    width: 150px;
+    margin: 10px 15px;
+}
+
+.aboutBox .information02Inner div ul>li {
+    font-size: 20px;
+    margin: 10px;
+    color: #373736;
+}
+
+.aboutBox .information02Inner div ul>li span {
+    font-weight: bold;
+}
+
+.aboutBox .information02Inner div:nth-of-type(1) {
+    width: 40%;
+    border-right: 1px dashed #373736;
+    border-bottom: 1px dashed #373736;
+}
+
+.aboutBox .information02Inner div:nth-of-type(2) {
+    padding-left: 10px;
+    width: 60%;
+    border-bottom: 1px dashed #373736;
+}
+
+.aboutBox .information02Inner div:nth-of-type(3) {
+    margin-top: 15px;
+    border-bottom: 1px dashed #373736;
+}
+
+.aboutBox .information02Inner div:nth-of-type(3) h2 {
+    margin-top: 15px;
+}
+
+.aboutBox .information02Inner div:nth-of-type(3) ul {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.aboutBox .information02Inner div:nth-of-type(3) ul li {
+    text-align: center;
+}
+
+.aboutBox .information02Inner div:nth-of-type(4) {
+    margin-top: 20px;
+
+} 
+/* .aboutBox .information02Inner div:nth-of-type(4) ul {
+     margin-top: 25px; 
+} */
+
+
+
 
 
 
@@ -647,9 +904,7 @@
 
 
   
-    .aboutMe {
-        padding-top: 35px;
-    }
+ 
 
     .page-5 {
         height: 900px;
