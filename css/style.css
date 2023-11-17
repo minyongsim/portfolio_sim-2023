@@ -126,9 +126,9 @@ body {
 .slideBar {
     position: fixed;
     z-index: 9999999;
-    bottom: 0;
+    top: 0;
     width: 0;
-    height: 11px;
+    height: 8px;
     background-color: #373736;
     border-radius: 0PX 50PX 50PX 0PX;
     opacity: 0;
